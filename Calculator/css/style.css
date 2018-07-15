@@ -1,0 +1,22 @@
+.box{
+    height: 500px;
+    width: 400px;
+    background-color: aquamarine;
+    margin: auto;
+}
+.screen{
+    height: 100px;
+    width: 400px;
+    background-color: antiquewhite;
+    font-size: 5rem;
+}
+.keypad{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.button{
+    width: 85px;
+    height: 85px;
+}
