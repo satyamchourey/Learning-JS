@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+.col{
+    display: inline;
+}
+
+/* 
+#text-area { 
+     display: block; 
+     } */

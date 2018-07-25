@@ -10,7 +10,8 @@ var guessField = document.querySelector('.guessField');
 var guessCount = 1;
 var resetButton;
 
-function guessClick (){
+function guessClick (e){
+    e.preventDefault();
     var userGuess = Number(guessField.value);
     if (guessCount===1){
         guesses.textContent = "previous guess :";
@@ -38,7 +39,9 @@ guessCount++;
 guessField.value="";
 guessField.focus();
 }
-guessSubmit.addEventListener("click", guessClick);
+// guessSubmit.addEventListener("click", guessClick);
+var form = document.querySelector(".form");
+form.addEventListener("submit",guessClick);
 
 function setGameOver(){
     guessField.disabled =true;
@@ -49,6 +52,7 @@ function setGameOver(){
     resetButton.addEventListener("click", resetGame);
 
 }
+
 
 
 
