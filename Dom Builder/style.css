@@ -3,7 +3,9 @@ body{
     text-align: center;
 }
 .col{
-    display: inline;
+    display: inline-flex ;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* 

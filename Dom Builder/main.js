@@ -6,7 +6,7 @@ function headDisplay() {
     var heading = document.createElement("h1");
     var headData = document.createTextNode("This");
     heading.appendChild(headData);
-    document.body.appendChild(heading);
+    document.getElementById("heading").appendChild(heading);
     
     (function(){
         document.getElementById("heading").disabled=true;
@@ -17,7 +17,8 @@ function headDisplay() {
         var p =document.createElement("P");
         var pData=document.createTextNode("is");
         p.appendChild(pData);
-        document.body.appendChild(p);
+        document.getElementById("para").appendChild(p);
+       
         (function(){
             document.getElementById("para").disabled=true;
         })();
@@ -26,9 +27,9 @@ function headDisplay() {
         var btn =document.createElement("button");
         var btnData=document.createTextNode("SCRIPTED");
         btn.appendChild(btnData);
-        document.body.appendChild(btn);
+        document.getElementById("btn").appendChild(btn);
         (function(){
-            document.getElementById("btn").disabled=true;
+            document.getElementById("btn1").disabled=true;
         })();
     }
     function taDisplay(){
@@ -36,8 +37,12 @@ function headDisplay() {
         var ta =document.createElement("textarea")
 taDiv.appendChild(ta);
         
-        document.body.appendChild(taDiv);
+        document.getElementById("text-area").appendChild(taDiv);
         (function(){
             document.getElementById("text-area").disabled=true;
         })();
     }
+
+
+
+    
