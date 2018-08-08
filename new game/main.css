@@ -1,0 +1,31 @@
+
+html {
+    font-family: sans-serif;
+  }
+  body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+  }
+
+#board{
+   background-color: gray;
+   height:600px;
+   width: 600px;
+  
+}
+
+.cell{
+    /* background-color: bisque; */
+    border-color: black;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    position: relative;
+
+}
+.txt:hover{
+    cursor: pointer;
+}
