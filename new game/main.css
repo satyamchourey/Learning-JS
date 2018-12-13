@@ -1,5 +1,14 @@
 
 html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+html {
     font-family: sans-serif;
   }
   body {
@@ -13,19 +22,30 @@ html {
    background-color: gray;
    height:600px;
    width: 600px;
+
   
 }
+.grid-container{
+    display: grid;
+}.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
 
-.cell{
-    /* background-color: bisque; */
-    border-color: black;
-    border-style: solid;
-    height: 100px;
-    width: 100px;
-    display: inline-flex;
-    position: relative;
-
-}
 .txt:hover{
     cursor: pointer;
+}
+
+
+.disable{
+    pointer-events: none;
 }
